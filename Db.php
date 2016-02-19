@@ -95,7 +95,7 @@ class Db {
     }
     //Limpa os resultados
     function clear(){
-        $this->result = new Lib\Row;
+        $this->result = new Row;
     }
 
     //Pegando erros
