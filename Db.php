@@ -81,7 +81,7 @@ class Db {
         $this->error[$sql] = $sth->errorInfo();
 
         if($sth->columnCount() > 0) {
-            return $this->result = $sth->fetchAll(PDO::FETCH_CLASS,"Lib\Row");
+            return $this->result = $sth->fetchAll(PDO::FETCH_CLASS,"Limp\Data\Row");
         } else {
             $this->result = false;
             return $this->rows;
